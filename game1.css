@@ -1,0 +1,149 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Noto+Serif);
+
+/* start navbar*/
+
+.mobo {
+  display: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.navbar {
+  display: block;
+  flex: 1;
+  background: #20a282;
+}
+
+.navitems {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 24px 64px;
+}
+
+/* .navitem {} */
+
+.navitem a {
+  text-decoration: none;
+  font: 20px "Noto Serif", serif;
+  color: #eee;
+}
+
+.navheader {
+  flex: 1;
+  background: #20a282;
+  padding: 16px 24px;
+}
+
+.navheader a {
+  font: 20px "Noto Serif", serif;
+  color: #dfd;
+  text-decoration: none;
+}
+
+/*start telefoon*/
+
+@media screen and (max-width: 620px) {
+  .mobo {
+    display: block;
+  }
+ 
+  .mobo-hidden {
+    display: none;
+  }
+ 
+  .navitems {
+    flex-direction: column;
+    padding: 24px 24px;
+  background: #20a282;
+  }
+  .navitem:not(:last-child) {
+    width: 50%;
+    margin-bottom: 16px;
+  }
+  .navitem:nth-child(even) {
+    position: absolute;
+    left: 50%;
+    transform: translateY(-100%);
+  }
+/* eind telefoon*/
+
+/* start logo*/
+}
+.Logo{
+  width: 10%;
+  margin-top: 1%;
+  margin-left: 1%;
+}
+/* eind logo*/
+
+/* Start footer*/
+.Footer {
+  background: #20a282;
+  height: 20px;
+  text-align: center;
+  font-size: 13px;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 101%;
+  z-index: 30;
+  padding-top: 8px;
+  margin-left: -8px;
+}
+/* eind footer*/
+
+/* Start text*/
+
+h2{
+  text-align: center;
+  margin-top: -7%;
+  font-size: 3rem;
+}
+
+.game-border{
+  border: 8px solid black;
+  height: 50%;
+  width: 50%;
+  position: absolute;
+  margin-left: 25%;
+  margin-top: 13%;
+}
+
+.highscore{
+  text-align: center;
+  margin-top: 30%;
+  font-size: 2rem;
+}
+
+/* eind text*/
+
+.foto{   
+  width: 20%;
+}
+
+.email{
+ border: 3px solid black;
+ font-weight: bold;
+ padding: 0.5%;
+ width: 17%;
+ align-items: center;
+ margin-bottom: 0.5% ;
+ margin-left: 42%;
+ margin-top: 18%;
+ font-size: 1.2rem;
+}
+
+.nummer{
+  border: 3px solid black;
+  font-weight: bold;
+  padding: 0.5%;
+  width: 17%;
+  align-items: center;
+  margin-left: 42%;
+  font-size: 1.2rem;
+}
